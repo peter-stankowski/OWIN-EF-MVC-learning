@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/OwinAuthWithMVC/.vs
+/.vs
+/OwinAuthWithMVC/packages
+/OwinAuthWithMVC/OwinAuthWithMVC/bin
+/OwinAuthWithMVC/OwinAuthWithMVC/obj/Debug

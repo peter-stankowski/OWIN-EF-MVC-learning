@@ -1,0 +1,35 @@
+﻿
+@{ 
+    var AuthenticationType = User.Identity.AuthenticationType.ToString();
+    var IsAuthenticated = User.Identity.IsAuthenticated.ToString();
+
+    var UserName = User.Identity.Name;
+
+    var IsAdmin = User.IsInRole("Admin");
+    var IsSuperAdmin = User.IsInRole("SuperAdmin");
+}
+
+<table class="table table-stripped">
+    <tbody>
+        <tr>
+            <th>Authentication Type</th>
+            <td>@AuthenticationType</td>
+        </tr>
+        <tr>
+            <th>Is Authenticated</th>
+            <td>@IsAuthenticated</td>
+        </tr>
+        <tr>
+            <th>User Name</th>
+            <td>@UserName</td>
+        </tr>
+        <tr>
+            <th>Is Admin</th>
+            <td>@IsAdmin</td>
+        </tr>
+        <tr>
+            <th>Is Super Admin</th>
+            <td>@IsSuperAdmin</td>
+        </tr>
+    </tbody>
+</table>

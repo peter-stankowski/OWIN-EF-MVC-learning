@@ -1,0 +1,12 @@
+﻿@Html.ActionLink("Home", "Index", "Home", null, new { @class = "list-group-item" })
+<hr />
+
+<h4>Secure Pages</h4>
+@Html.ActionLink("For Super Admins", "ForSuperAdmins", "Secret", null, new { @class = "list-group-item" })
+@Html.ActionLink("For Admins", "ForAdmins", "Secret", null, new { @class = "list-group-item" })
+@Html.ActionLink("For Users", "ForUsers", "Secret", null, new { @class = "list-group-item" })
+<hr />
+
+<h4>Auth Pages</h4>
+@Html.ActionLink("Login", "ForGuests", "Secret", null, new { @class = "list-group-item" })
+@Html.ActionLink("Log Out", "Logout", "Secret", null, new { @class = "list-group-item" })
